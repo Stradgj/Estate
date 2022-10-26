@@ -45,6 +45,7 @@
     url(../img/main-img.png);
   background-size: cover;
   background-position: top;
+  padding: 0;
 }
 .hero__container {
   display: flex;
@@ -169,6 +170,7 @@
 /* house section */
 .house__section {
   text-align: center;
+  padding: 0;
 }
 .house__section img {
   width: 100%;
@@ -243,14 +245,25 @@
 .listings-more__container {
   text-align: center;
 }
-.listing-link:link,
-.listing-link:visited {
-  color: #45525b;
-  font-size: 1.5rem;
-  border-bottom: 1px solid #45525b00;
-  transition: all 0.3s;
+/* People section */
+.people__section {
 }
-.listing-link:hover,
-.listing-link:active {
-  border-bottom: 1px solid #45525b;
+.people__container {
+  gap: 6.4rem;
+}
+.people-tittle_container {
+  max-width: 36.8rem;
+}
+.people__title {
+}
+.subtitle {
+}
+.tertiary-title {
+}
+.title-description {
+}
+.people-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }

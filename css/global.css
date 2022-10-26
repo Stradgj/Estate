@@ -66,9 +66,11 @@ body {
 [class*="__container"] {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 1.6rem 0 1.6rem;
 }
 [class*="__section"] {
   padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .grid {
@@ -119,6 +121,9 @@ body {
   max-width: 56rem;
   line-height: 1.1;
 }
+.title-description:not(:last-child) {
+  margin-bottom: 2rem;
+}
 .author-box {
   display: flex;
   align-items: center;
@@ -140,4 +145,15 @@ body {
   text-transform: uppercase;
   color: #6f7278;
   letter-spacing: 2px;
+}
+.more-link:link,
+.more-link:visited {
+  color: #45525b;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #45525b00;
+  transition: all 0.3s;
+}
+.more-link:hover,
+.more-link:active {
+  border-bottom: 1px solid #45525b;
 }
