@@ -1,0 +1,240 @@
+/* HEADER */
+.header__container {
+  display: flex;
+  padding: 1rem 1.6rem;
+}
+.logo-box {
+  display: flex;
+  max-width: 10.2rem;
+}
+.logo-box a img {
+  width: 100%;
+}
+.nav-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+.nav-box ul {
+  display: flex;
+  list-style: none;
+}
+.nav-item:not(:last-child) {
+  margin-right: 3rem;
+}
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #444;
+  border-bottom: 1px solid rgba(68, 68, 68, 0);
+  transition: all 0.3s;
+}
+.nav-link:hover,
+.nav-link:active {
+  border-bottom: 1px solid #444;
+}
+
+/* HERO SECTION */
+.hero__section {
+  background-image: linear-gradient(
+      rgba(250, 250, 252, 0.78),
+      rgba(250, 250, 252, 0.78)
+    ),
+    url(../img/main-img.png);
+  background-size: cover;
+  background-position: top;
+}
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-logo {
+  margin-top: 24.5rem;
+  margin-bottom: 2rem;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 1.2;
+  max-width: 52rem;
+  color: #45525b;
+  margin-bottom: 15rem;
+}
+.hero-button {
+  margin-bottom: 6rem;
+}
+.hero-link:link,
+.hero-link:visited {
+  display: block;
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 100px;
+  border: 2px solid #444;
+  transition: all 0.3s;
+}
+.hero-link:hover,
+.hero-link:active {
+  border: 2px solid #ff8a63;
+}
+.hero-link img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* GOAL SECTION */
+.goal__section {
+  background-color: #fafafc;
+}
+
+.goal__content {
+  max-width: 57.6rem;
+}
+.goal-text {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+.goal-text:first-child {
+  margin-bottom: 0.6rem;
+}
+/*requirements section*/
+.requirements__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.requirements__center-title {
+  margin-bottom: 3rem;
+}
+.requirements__content {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3.2rem;
+  align-items: center;
+  justify-content: center;
+}
+.requirements-img {
+  grid-column: span 3;
+}
+.requirements-img img {
+  width: 100%;
+}
+.requirements {
+  grid-column: span 2;
+}
+.requirement {
+  max-width: 30rem;
+  padding: 2.1rem;
+}
+.requirement:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.requirement:first-child {
+  background-color: #fafafc;
+  box-shadow: inset 0 0 0 0.1rem rgba(202, 204, 209, 0.2);
+  border-radius: 1rem;
+}
+.requirement-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: #45525b;
+  margin-bottom: 1rem;
+}
+
+.requirement-title {
+  color: #45525b;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  margin-bottom: 0.8rem;
+}
+.requirement-text {
+  max-width: 25.8rem;
+  color: #6f7278;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+/* house section */
+.house__section {
+  text-align: center;
+}
+.house__section img {
+  width: 100%;
+  max-width: 144rem;
+}
+/* Listings section */
+.listing__section {
+  background-color: #fafafc;
+}
+.listings__container {
+  row-gap: 2rem;
+  column-gap: 1.6rem;
+}
+.listings__title {
+  margin-bottom: 3rem;
+}
+.listing-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem 1.6rem;
+  max-width: 37.9rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 8px 0px;
+}
+.listing-img {
+  width: 100%;
+}
+.listing-type {
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #6f7278;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.listing-address {
+  text-align: center;
+  font-size: 2rem;
+  color: #45525b;
+  margin-bottom: 1rem;
+}
+.listing-features {
+  display: flex;
+}
+.feature {
+  display: flex;
+  color: #45525b;
+  font-size: 1.2rem;
+  align-items: center;
+}
+.feature:not(:last-child) {
+  margin-right: 1.6rem;
+}
+.feature-icon {
+  margin-right: 0.8rem;
+}
+.listing {
+  align-self: center;
+  justify-self: center;
+  background-color: #fff;
+  max-width: 37.9rem;
+  overflow: hidden;
+  border-radius: 0 0 1rem 1rem;
+  transition: all 0.4s;
+}
+.listing:hover {
+  transform: translateY(-1rem);
+}
