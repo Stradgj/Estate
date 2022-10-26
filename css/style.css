@@ -181,6 +181,7 @@
 .listings__container {
   row-gap: 2rem;
   column-gap: 1.6rem;
+  margin-bottom: 2rem;
 }
 .listings__title {
   margin-bottom: 3rem;
@@ -192,7 +193,6 @@
 
   padding: 2rem 1.6rem;
   max-width: 37.9rem;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 8px 0px;
 }
 .listing-img {
   width: 100%;
@@ -234,7 +234,23 @@
   overflow: hidden;
   border-radius: 0 0 1rem 1rem;
   transition: all 0.4s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 8px 0px;
 }
 .listing:hover {
   transform: translateY(-1rem);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 8px 2px;
+}
+.listings-more__container {
+  text-align: center;
+}
+.listing-link:link,
+.listing-link:visited {
+  color: #45525b;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #45525b00;
+  transition: all 0.3s;
+}
+.listing-link:hover,
+.listing-link:active {
+  border-bottom: 1px solid #45525b;
 }
