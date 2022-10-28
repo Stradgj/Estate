@@ -262,3 +262,57 @@
 .people-column {
   width: 100%;
 }
+/* Newsroom section */
+.newsroom__section {
+  background-color: #fafafa;
+}
+.newsroom-tittle__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.newsroom__container {
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.news {
+  cursor: pointer;
+  max-width: 37.5rem;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.02) 0px 1px 8px 10px;
+  transition: all 0.4s;
+}
+.news:hover {
+  transform: translateY(-1rem);
+  box-shadow: rgba(99, 99, 99, 0.02) 0px 1px 8px 0px;
+}
+
+.news-content {
+  padding: 3rem;
+}
+.news-subtitle {
+  font-size: 1.2rem;
+  color: #ff8a63;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.news-title {
+  font-size: 1.6rem;
+  color: #45525b;
+  line-height: 1.2;
+  height: 3.9rem;
+  margin-bottom: 1rem;
+}
+.news-date {
+  font-size: 1.3rem;
+  color: #6f7278;
+}
+.newsroom-more__container {
+  text-align: center;
+}
