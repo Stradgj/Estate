@@ -291,7 +291,9 @@
   transform: translateY(-1rem);
   box-shadow: rgba(99, 99, 99, 0.02) 0px 1px 8px 0px;
 }
-
+.news-img img {
+  width: 100%;
+}
 .news-content {
   padding: 3rem;
 }
@@ -315,4 +317,73 @@
 }
 .newsroom-more__container {
   text-align: center;
+}
+/* Testimonials section */
+.testimonials__container {
+}
+.testimonial-slider {
+  display: flex;
+  align-items: flex-start;
+}
+.testimonial {
+  flex: 0 0 50%;
+  padding: 3.1rem;
+  border-radius: 1rem;
+  transition: all 0.5s;
+  border: 1px solid rgba(202, 204, 209, 0.2);
+}
+.testimonial:not(:last-child) {
+  margin-right: 2rem;
+}
+.testimonial-rating {
+  margin-bottom: 0.8rem;
+}
+.star {
+}
+.testimonial-title {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.testimonial-text {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+.testimonial-author {
+  color: #45525b;
+  position: relative;
+  margin-left: 1rem;
+}
+.testimonial-author::before {
+  position: absolute;
+  content: "";
+  background-color: #ff8a63;
+  width: 2px;
+  height: 2.4rem;
+  transform: translateX(-1rem);
+}
+.testimonials-button__container {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+.btn-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #52503b;
+  background-color: #fff;
+  border: 2px solid #52503b;
+  width: 6rem;
+  height: 6rem;
+  font-size: 4.8rem;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.btn-slide:active {
+  background-color: #c7c7c7;
+}
+.slide-left {
+}
+.slide-right {
 }
