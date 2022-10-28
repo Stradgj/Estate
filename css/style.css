@@ -229,6 +229,7 @@
   margin-right: 0.8rem;
 }
 .listing {
+  cursor: pointer;
   align-self: center;
   justify-self: center;
   background-color: #fff;
@@ -236,34 +237,28 @@
   overflow: hidden;
   border-radius: 0 0 1rem 1rem;
   transition: all 0.4s;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.02) 0px 1px 8px 10px;
 }
 .listing:hover {
   transform: translateY(-1rem);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 8px 2px;
+  box-shadow: rgba(99, 99, 99, 0.02) 0px 1px 8px 0px;
 }
 .listings-more__container {
   text-align: center;
 }
 /* People section */
-.people__section {
-}
 .people__container {
+  grid-template-columns: 1fr 2fr;
   gap: 6.4rem;
 }
-.people-tittle_container {
+.people__title {
+  width: 100%;
   max-width: 36.8rem;
 }
-.people__title {
-}
-.subtitle {
-}
-.tertiary-title {
-}
-.title-description {
+.people-content {
+  display: flex;
+  gap: 1.6rem;
 }
 .people-column {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
+  width: 100%;
 }
