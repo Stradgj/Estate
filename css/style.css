@@ -410,7 +410,6 @@
 .cta-link:link,
 .cta-link:visited {
   display: inline-block;
-  list-style: none;
   font-size: 1.6rem;
   color: #45525b;
   background-color: #fff;
@@ -425,5 +424,100 @@
   box-shadow: inset 0 0 0 0.1rem #fff;
 }
 .cta-link:not(:last-child) {
+  margin-right: 2rem;
+}
+/* Footer */
+.footer__section {
+  background-color: #292c32;
+}
+.footer-logo__container {
+  text-align: center;
+  margin-bottom: 7.5rem;
+}
+.footer-navigation__container {
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 2.8rem;
+}
+.pages-column {
+}
+.foo-elements {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.foo-element:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.foo-link:link,
+.foo-link:visited {
+  color: #fff;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+.foo-link:hover,
+.foo-link:active {
+  border-bottom: 1px solid #fff;
+}
+.foo-title {
+  font-size: 1.4rem;
+  color: #ff8a63;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.subscribe-column {
+  grid-column: span 2;
+}
+.subsctibe-title {
+  margin-bottom: 1rem;
+}
+.subsctibe-title .title-description {
+  color: #fff;
+  font-size: 1.6rem;
+}
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 5.3rem;
+  border-radius: 1rem;
+}
+.input-field {
+  background-color: #fafafc00;
+  border: none;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+  margin-left: 3.4rem;
+}
+.input-field:focus {
+  box-shadow: none;
+}
+.submit-btn {
+  margin-left: auto;
+  margin-right: 1.5rem;
+  border: none;
+  padding: 0.8rem;
+  background-color: #3a4443;
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.submit-btn:active {
+  background-color: #fff;
+  color: #3a4443;
+}
+.footer-copyright__container {
+  display: flex;
+}
+.copyrights {
+  font-size: 1.6rem;
+  color: #fff;
+}
+.social-networks {
+  margin-left: auto;
+}
+.social-network:not(:last-child) {
   margin-right: 2rem;
 }

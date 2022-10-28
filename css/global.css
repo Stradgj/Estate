@@ -111,6 +111,7 @@ body {
   color: #ff8a63;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-bottom: 0.4rem;
 }
 .secondary-title {
   font-size: 4.8rem;
