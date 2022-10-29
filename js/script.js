@@ -31,3 +31,28 @@ openMenu.addEventListener("click", function () {
   navigation.classList.toggle("open");
   navigation.classList.toggle("close");
 });
+//smooth scrolling animation
+const navBox = document.querySelector(".nav-box");
+const allLinks = document.querySelectorAll("a:link");
+allLinks.forEach((link) =>
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+    if (link.classList.contains("nav-link")) {
+      navBox.classList.toggle("open");
+      navBox.classList.toggle("close");
+      openMenu.classList.toggle("mobile-close-menu");
+    }
+  })
+);
