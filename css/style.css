@@ -503,6 +503,7 @@
 }
 .footer-copyright__container {
   display: flex;
+  align-items: center;
 }
 .copyrights {
   font-size: 1.6rem;
@@ -510,6 +511,11 @@
 }
 .social-networks {
   margin-left: auto;
+}
+.social-network {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .social-network:not(:last-child) {
   margin-right: 2rem;
