@@ -3,23 +3,23 @@ const slider = document.querySelector(".testimonial-slider");
 const btnLeft = document.querySelector(".slide-left");
 const btnRight = document.querySelector(".slide-right");
 
-let x = 0;
+let position = 0;
 const viewportWidth = window.screen.availWidth;
 const testimonialWidth = viewportWidth <= 544 ? 100 : 50;
 const testimonialAmount = document.querySelectorAll(".testimonial").length;
 btnLeft.addEventListener("click", function () {
-  x += testimonialWidth;
-  if (x > 0) {
-    x = -(testimonialAmount - 1) * testimonialWidth;
+  position += testimonialWidth;
+  if (position > 0) {
+    position = -(testimonialAmount - 1) * testimonialWidth;
   }
-  slider.style.transform = `translateX(${x}%)`;
+  slider.style.transform = `translateX(${position}%)`;
 });
 btnRight.addEventListener("click", function () {
-  x -= testimonialWidth;
-  if (-x >= testimonialAmount * testimonialWidth) {
-    x = 0;
+  position -= testimonialWidth;
+  if (-position >= testimonialAmount * testimonialWidth) {
+    position = 0;
   }
-  slider.style.transform = `translateX(${x}%)`;
+  slider.style.transform = `translateX(${position}%)`;
 });
 // Mobile menu
 const openMenu = document.querySelector(".mobile-menu");

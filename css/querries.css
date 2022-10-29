@@ -17,6 +17,9 @@
     display: flex;
     justify-content: center;
   }
+  .goal__title {
+    text-align: start;
+  }
   .grid-3-cols {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -47,6 +50,12 @@
   }
   .grid-2-cols {
     grid-template-columns: 1fr;
+  }
+  .goal__title {
+    text-align: center;
+  }
+  .goal-text {
+    text-align: center;
   }
   .goal__content,
   .goal__title {
