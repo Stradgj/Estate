@@ -4,22 +4,23 @@ const btnLeft = document.querySelector(".slide-left");
 const btnRight = document.querySelector(".slide-right");
 
 let x = 0;
+const viewportWidth = window.screen.availWidth;
+const testimonialWidth = viewportWidth <= 544 ? 100 : 50;
 const testimonialAmount = document.querySelectorAll(".testimonial").length;
 btnLeft.addEventListener("click", function () {
-  x += 50;
+  x += testimonialWidth;
   if (x > 0) {
-    x = -(testimonialAmount - 1) * 50;
+    x = -(testimonialAmount - 1) * testimonialWidth;
   }
   slider.style.transform = `translateX(${x}%)`;
 });
 btnRight.addEventListener("click", function () {
-  x -= 50;
-  if (-x >= testimonialAmount * 50) {
+  x -= testimonialWidth;
+  if (-x >= testimonialAmount * testimonialWidth) {
     x = 0;
   }
   slider.style.transform = `translateX(${x}%)`;
 });
-
 // Mobile menu
 const openMenu = document.querySelector(".mobile-menu");
 const closeMenu = document.querySelector(".mobile-close-menu");

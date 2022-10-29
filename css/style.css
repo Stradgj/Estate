@@ -198,7 +198,7 @@
   padding: 2rem 1.6rem;
   max-width: 37.9rem;
 }
-.listing-img {
+.listing-img img {
   width: 100%;
 }
 .listing-type {
@@ -510,6 +510,7 @@
 .copyrights {
   font-size: 1.6rem;
   color: #fff;
+  margin-right: 2rem;
 }
 .social-networks {
   margin-left: auto;

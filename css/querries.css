@@ -45,6 +45,16 @@
   html {
     font-size: 50%;
   }
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+  .goal__content,
+  .goal__title {
+    justify-self: center;
+  }
+  .goal__title {
+    margin-bottom: 2rem;
+  }
   .mobile-nav .close {
     width: 100vw;
     height: 100vh;
@@ -75,5 +85,63 @@
   }
   .mobile-menu {
     display: block;
+  }
+  .goal__container .author-box {
+    align-items: center;
+    justify-content: center;
+  }
+  .people__container {
+    grid-template-columns: 1fr;
+  }
+  .people__title {
+    justify-self: center;
+  }
+  .footer-navigation__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .foo-element {
+    margin-bottom: 2rem;
+  }
+  .subscribe-column {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 34em) {
+  html {
+    font-size: 46%;
+  }
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+  }
+  .listing {
+    justify-self: center !important;
+  }
+  .testimonial {
+    flex-basis: 100%;
+  }
+  .news {
+    grid-column: 1 !important;
+    justify-self: center !important;
+  }
+  .social-network {
+    margin-bottom: 1rem;
+  }
+  .people-content {
+    flex-direction: column;
+  }
+  .author-box {
+    justify-content: center;
+  }
+  .information {
+    width: 20rem;
+  }
+  .testimonials-button__container {
+    margin-top: 2rem;
+  }
+  .requirements__content {
+    grid-template-columns: 1fr;
+  }
+  .requirements {
+    justify-self: center;
   }
 }
