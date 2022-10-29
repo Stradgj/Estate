@@ -169,3 +169,37 @@ body {
 .more-link:active {
   border-bottom: 1px solid #45525b;
 }
+.mobile-menu,
+.mobile-close-menu {
+  margin-left: auto;
+  z-index: 10001;
+  display: none;
+  align-self: center;
+  width: 3.7rem;
+  height: 2rem;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.mobile-menu::after,
+.mobile-menu::before {
+  position: absolute;
+  content: "";
+  width: 3.7rem;
+  height: 2px;
+  background-color: #45525b;
+  transition: all 0.3s;
+}
+.mobile-close-menu {
+  transform: translateY(-30%);
+}
+.mobile-menu::before {
+  bottom: 0;
+}
+.mobile-close-menu::after {
+  transform: rotate(45deg);
+  bottom: 0;
+}
+.mobile-close-menu::before {
+  transform: rotate(-45deg);
+}

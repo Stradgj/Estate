@@ -2,6 +2,7 @@
 .header__container {
   display: flex;
   padding: 1rem 1.6rem;
+  position: relative;
 }
 .logo-box {
   display: flex;
@@ -19,6 +20,7 @@
 .nav-box ul {
   display: flex;
   list-style: none;
+  transition: all 0.5s;
 }
 .nav-item:not(:last-child) {
   margin-right: 3rem;
