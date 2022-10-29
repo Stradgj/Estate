@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+    name="description"
+    content="Estate is a site, that help you to find a hew home"
+  />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estate &mdash; Choose your house</title>
-    <link rel="icon" href="img/icon.svg" />
+    <link rel="icon" href="img/svg/icon.svg" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/querries.css" />
@@ -14,7 +18,7 @@
   <body>
     <header class="header__container mobile-nav">
       <div class="logo-box">
-        <a href="#"> <img src="img/logo.svg" alt="Estate+" /></a>
+        <a href="#"> <img src="img/svg/logo.svg" alt="Estate+" /></a>
       </div>
       <nav class="nav-box close">
         <ul>
@@ -32,7 +36,7 @@
         <div class="hero__container">
           <div class="hero__content">
             <div class="hero-logo">
-              <img src="img/Logo-vertical.svg" alt="house" />
+              <img src="img/svg/Logo-vertical.svg" alt="house" />
             </div>
             <div class="hero-text">
               <h1 class="main-title">
@@ -41,7 +45,7 @@
             </div>
             <div class="hero-button">
               <a href="#goal" class="hero-link">
-                <img src="img/Arrow.svg" alt="arrow" />
+                <img src="img/svg/Arrow.svg" alt="arrow" />
               </a>
             </div>
           </div>
@@ -70,7 +74,7 @@
             </p>
             <div class="author-box">
               <div class="photo">
-                <img src="img/Ava-orn.png" alt="Ava Orn" />
+                <img src="img/people/Ava-orn.png" alt="Ava Orn" />
               </div>
               <div class="information">
                 <p class="name">Ava Orn</p>
@@ -92,15 +96,19 @@
           </div>
           <div class="requirements__content grid">
             <div class="requirements-img">
-              <img
-                src="img/requirements.png"
-                alt="amazing city with landscape"
-              />
+              <picture>
+                <source type="image/webp" srcset="img/gallery/requirements.webp">
+                <source type="image/jpg" srcset="img/gallery/requirements.jpg">
+                <img
+                  src="img/requirements.jpg"
+                  alt="amazing city with landscape"
+                />
+            </picture>
             </div>
             <div class="requirements">
               <div class="requirement">
                 <div class="requirement-icon">
-                  <img src="img/geo-icon.svg" alt="geolocation icon" />
+                  <img src="img/svg/geo-icon.svg" alt="geolocation icon" />
                 </div>
                 <h4 class="requirement-title">Stellar locations</h4>
                 <p class="requirement-text">
@@ -109,7 +117,7 @@
               </div>
               <div class="requirement">
                 <div class="requirement-icon">
-                  <img src="img/frame-icon.svg" alt="frame icon" />
+                  <img src="img/svg/frame-icon.svg" alt="frame icon" />
                 </div>
                 <h4 class="requirement-title">High quality builds</h4>
                 <p class="requirement-text">
@@ -118,7 +126,7 @@
               </div>
               <div class="requirement">
                 <div class="requirement-icon">
-                  <img src="img/tassel-icon.svg" alt="tassel icon" />
+                  <img src="img/svg/tassel-icon.svg" alt="tassel icon" />
                 </div>
                 <h4 class="requirement-title">Expert interior design</h4>
                 <p class="requirement-text">
@@ -130,7 +138,14 @@
         </div>
       </section>
       <section class="house__section">
-        <img src="img/modern-house.png" alt="cool modern house" />
+        <picture>
+          <source type="image/webp" srcset="img/gallery/modern-house.webp">
+          <source type="image/jpg" srcset="img/gallery/modern-house.jpg">
+          <img
+            src="img/gallery/modern-house.jpg"
+            alt="modern-house"
+          />
+      </picture>
       </section>
       <section class="listing__section" id="listings">
         <div class="listings-title__container">
@@ -147,7 +162,11 @@
         <div class="listings__container grid grid-3-cols">
           <div class="listing">
             <div class="listing-img">
-              <img src="img/california.png" alt="house" />
+              <picture>
+                <source type="image/webp" srcset="img/gallery/california.webp">
+                <source type="image/jpg" srcset="img/gallery/california.jpg">
+                <img src="img/gallery/california.jpg" alt="house" />
+              </picture>
             </div>
             <div class="listing-content">
               <p class="listing-type">House</p>
@@ -155,19 +174,19 @@
               <div class="listing-features">
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/bed-icon.svg" alt="bed" />
+                    <img src="img/svg/bed-icon.svg" alt="bed" />
                   </span>
                   <p>16 beds</p>
                 </div>
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/bath-icon.svg" alt="bath" />
+                    <img src="img/svg/bath-icon.svg" alt="bath" />
                   </span>
                   <p>2 bathrooms</p>
                 </div>
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/door-icon.svg" alt="door" />
+                    <img src="img/svg/door-icon.svg" alt="door" />
                   </span>
                   <p>11 rooms</p>
                 </div>
@@ -176,7 +195,11 @@
           </div>
           <div class="listing">
             <div class="listing-img">
-              <img src="img/welford.png" alt="villa" />
+              <picture>
+                <source type="image/webp" srcset="img/gallery/welford.webp">
+                <source type="image/jpg" srcset="img/gallery/welford.jpg">
+                <img src="img/gallery/welford.jpg" alt="villa" />
+            </picture>
             </div>
             <div class="listing-content">
               <p class="listing-type">Villa</p>
@@ -184,19 +207,19 @@
               <div class="listing-features">
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/bed-icon.svg" alt="bed" />
+                    <img src="img/svg/bed-icon.svg" alt="bed" />
                   </span>
                   <p>12 beds</p>
                 </div>
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/bath-icon.svg" alt="bath" />
+                    <img src="img/svg/bath-icon.svg" alt="bath" />
                   </span>
                   <p>3 bathrooms</p>
                 </div>
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/door-icon.svg" alt="door" />
+                    <img src="img/svg/door-icon.svg" alt="door" />
                   </span>
                   <p>16 rooms</p>
                 </div>
@@ -205,7 +228,11 @@
           </div>
           <div class="listing">
             <div class="listing-img">
-              <img src="img/grove.png" alt="house" />
+              <picture>
+                <source type="image/webp" srcset="img/gallery/grove.webp">
+                <source type="image/jpg" srcset="img//gallery/grove.jpg">
+                <img src="img/gallery/grove.jpg" alt="house" />
+            </picture>
             </div>
             <div class="listing-content">
               <p class="listing-type">House</p>
@@ -213,19 +240,19 @@
               <div class="listing-features">
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/bed-icon.svg" alt="bed" />
+                    <img src="img/svg/bed-icon.svg" alt="bed" />
                   </span>
                   <p>12 beds</p>
                 </div>
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/bath-icon.svg" alt="bath" />
+                    <img src="img/svg/bath-icon.svg" alt="bath" />
                   </span>
                   <p>2 bathrooms</p>
                 </div>
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/door-icon.svg" alt="door" />
+                    <img src="img/svg/door-icon.svg" alt="door" />
                   </span>
                   <p>14 rooms</p>
                 </div>
@@ -234,7 +261,11 @@
           </div>
           <div class="listing">
             <div class="listing-img">
-              <img src="img/wallace.png" alt="apartment" />
+              <picture>
+                <source type="image/webp" srcset="img/gallery/wallace.webp">
+                <source type="image/jpg" srcset="img/gallery/wallace.jpg">
+                <img src="img/gallery/wallace.jpg" alt="apartment" />
+            </picture>
             </div>
             <div class="listing-content">
               <p class="listing-type">Apartment</p>
@@ -242,19 +273,19 @@
               <div class="listing-features">
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/bed-icon.svg" alt="bed" />
+                    <img src="img/svg/bed-icon.svg" alt="bed" />
                   </span>
                   <p>10 beds</p>
                 </div>
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/bath-icon.svg" alt="bath" />
+                    <img src="img/svg/bath-icon.svg" alt="bath" />
                   </span>
                   <p>2 bathrooms</p>
                 </div>
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/door-icon.svg" alt="door" />
+                    <img src="img/svg/door-icon.svg" alt="door" />
                   </span>
                   <p>8 rooms</p>
                 </div>
@@ -263,7 +294,11 @@
           </div>
           <div class="listing">
             <div class="listing-img">
-              <img src="img/dwight.png" alt="apartment" />
+              <picture>
+                <source type="image/webp" srcset="img/gallery/dwight.webp">
+                <source type="image/jpg" srcset="img/gallery/dwight.jpg">
+                <img src="img/gallery/dwight.jpg" alt="apartment" />
+              </picture>
             </div>
             <div class="listing-content">
               <p class="listing-type">Apartment</p>
@@ -271,19 +306,19 @@
               <div class="listing-features">
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/bed-icon.svg" alt="bed" />
+                    <img src="img/svg/bed-icon.svg" alt="bed" />
                   </span>
                   <p>8 beds</p>
                 </div>
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/bath-icon.svg" alt="bath" />
+                    <img src="img/svg/bath-icon.svg" alt="bath" />
                   </span>
                   <p>1 bathrooms</p>
                 </div>
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/door-icon.svg" alt="door" />
+                    <img src="img/svg/door-icon.svg" alt="door" />
                   </span>
                   <p>6 rooms</p>
                 </div>
@@ -292,7 +327,11 @@
           </div>
           <div class="listing">
             <div class="listing-img">
-              <img src="img/north.png" alt="house" />
+              <picture>
+                <source type="image/webp" srcset="img/gallery/north.webp">
+                <source type="image/jpg" srcset="img/gallery/north.jpg">
+                <img src="img/gallery/north.jpg" alt="house" />
+             </picture>
             </div>
             <div class="listing-content">
               <p class="listing-type">House</p>
@@ -300,19 +339,19 @@
               <div class="listing-features">
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/bed-icon.svg" alt="bed" />
+                    <img src="img/svg/bed-icon.svg" alt="bed" />
                   </span>
                   <p>14 beds</p>
                 </div>
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/bath-icon.svg" alt="bath" />
+                    <img src="img/svg/bath-icon.svg" alt="bath" />
                   </span>
                   <p>3 bathrooms</p>
                 </div>
                 <div class="feature">
                   <span class="feature-icon">
-                    <img src="img/door-icon.svg" alt="door" />
+                    <img src="img/svg/door-icon.svg" alt="door" />
                   </span>
                   <p>11 rooms</p>
                 </div>
@@ -342,7 +381,7 @@
             <div class="people-column">
               <div class="author-box">
                 <div class="photo">
-                  <img src="img/Ava-orn.png" alt="Ava Orn" />
+                  <img src="img/people/Ava-orn.png" alt="Ava Orn" />
                 </div>
                 <div class="information">
                   <p class="name">Ava Orn</p>
@@ -351,7 +390,7 @@
               </div>
               <div class="author-box">
                 <div class="photo">
-                  <img src="img/Ella-hessel.png" alt="Ava Orn" />
+                  <img src="img/people/Ella-hessel.png" alt="Ava Orn" />
                 </div>
                 <div class="information">
                   <p class="name">Ella Hessel</p>
@@ -360,7 +399,7 @@
               </div>
               <div class="author-box">
                 <div class="photo">
-                  <img src="img/Daryl-Gislason.png" alt="Ava Orn" />
+                  <img src="img/people/Daryl-Gislason.png" alt="Ava Orn" />
                 </div>
                 <div class="information">
                   <p class="name">Daryl Gislason</p>
@@ -371,7 +410,7 @@
             <div class="people-column">
               <div class="author-box">
                 <div class="photo">
-                  <img src="img/David-Sporer.png" alt="Ava Orn" />
+                  <img src="img/people/David-Sporer.png" alt="Ava Orn" />
                 </div>
                 <div class="information">
                   <p class="name">David Sporer</p>
@@ -380,7 +419,7 @@
               </div>
               <div class="author-box">
                 <div class="photo">
-                  <img src="img/Trevor-Torphy.png" alt="Ava Orn" />
+                  <img src="img/people/Trevor-Torphy.png" alt="Ava Orn" />
                 </div>
                 <div class="information">
                   <p class="name">Trevor Torphy</p>
@@ -389,7 +428,7 @@
               </div>
               <div class="author-box">
                 <div class="photo">
-                  <img src="img/Amanda-giovanni.png" alt="Ava Orn" />
+                  <img src="img/people/Amanda-giovanni.png" alt="Ava Orn" />
                 </div>
                 <div class="information">
                   <p class="name">Amanda Giovanni</p>
@@ -409,7 +448,11 @@
         <div class="newsroom__container grid grid-3-cols">
           <div class="news">
             <div class="news-img">
-              <img src="img/press-release.png" alt="modern house">
+              <picture>
+                <source type="image/webp" srcset="img/gallery/press-release.webp">
+                <source type="image/jpg" srcset="img/gallery/press-release.jpg">
+                <img src="img/gallery/press-release.jpg" alt="modern house" />
+             </picture>
             </div>
             <div class="news-content">
               <p class="news-subtitle">Press release</p>
@@ -419,7 +462,11 @@
           </div>
           <div class="news">
             <div class="news-img">
-              <img src="img/announcement.png" alt="small modern house">
+              <picture>
+                <source type="image/webp" srcset="img/gallery/announcement.webp">
+                <source type="image/jpg" srcset="img/gallery/announcement.jpg">
+                <img src="img/gallery/announcement.jpg" alt="small modern house" />
+              </picture>
             </div>
             <div class="news-content">
               <p class="news-subtitle">Announcement</p>
@@ -429,7 +476,11 @@
           </div>
           <div class="news">
             <div class="news-img">
-              <img src="img/news.png" alt="modern apartment">
+              <picture>
+                <source type="image/webp" srcset="img/gallery/announcement.webp">
+                <source type="image/jpg" srcset="img/gallery/announcement.jpg">
+                <img src="img/gallery/announcement.jpg" alt="modern apartments" />
+             </picture>
             </div>
             <div class="news-content">
               <p class="news-subtitle">Company news</p>
@@ -454,19 +505,19 @@
             <div class="testimonial">
               <div class="testimonial-rating">
                 <span class="star">
-                  <img src="img/filled-star.svg" alt="star">
+                  <img src="img/svg/filled-star.svg" alt="star">
                 </span>
                 <span class="star">
-                  <img src="img/filled-star.svg" alt="star">
+                  <img src="img/svg/filled-star.svg" alt="star">
                 </span>
                 <span class="star">
-                  <img src="img/filled-star.svg" alt="star">
+                  <img src="img/svg/filled-star.svg" alt="star">
                 </span>
                 <span class="star">
-                  <img src="img/filled-star.svg" alt="star">
+                  <img src="img/svg/filled-star.svg" alt="star">
                 </span>
                 <span class="star">
-                  <img src="img/filled-star.svg" alt="star">
+                  <img src="img/svg/filled-star.svg" alt="star">
                 </span>
               </div>
               <div class="testimonial-title">We found the perfect home!</div>
@@ -476,19 +527,19 @@
             <div class="testimonial">
               <div class="testimonial-rating">
                 <span class="star">
-                  <img src="img/filled-star.svg" alt="star">
+                  <img src="img/svg/filled-star.svg" alt="star">
                 </span>
                 <span class="star">
-                  <img src="img/filled-star.svg" alt="star">
+                  <img src="img/svg/filled-star.svg" alt="star">
                 </span>
                 <span class="star">
-                  <img src="img/filled-star.svg" alt="star">
+                  <img src="img/svg/filled-star.svg" alt="star">
                 </span>
                 <span class="star">
-                  <img src="img/filled-star.svg" alt="star">
+                  <img src="img/svg/filled-star.svg" alt="star">
                 </span>
                 <span class="star">
-                  <img src="img/empty-star.svg" alt="star">
+                  <img src="img/svg/empty-star.svg" alt="star">
                 </span>
               </div>
               <div class="testimonial-title">We're so happy with Estate.</div>
@@ -498,19 +549,19 @@
             <div class="testimonial">
               <div class="testimonial-rating">
                 <span class="star">
-                  <img src="img/filled-star.svg" alt="star">
+                  <img src="img/svg/filled-star.svg" alt="star">
                 </span>
                 <span class="star">
-                  <img src="img/filled-star.svg" alt="star">
+                  <img src="img/svg/filled-star.svg" alt="star">
                 </span>
                 <span class="star">
-                  <img src="img/filled-star.svg" alt="star">
+                  <img src="img/svg/filled-star.svg" alt="star">
                 </span>
                 <span class="star">
-                  <img src="img/filled-star.svg" alt="star">
+                  <img src="img/svg/filled-star.svg" alt="star">
                 </span>
                 <span class="star">
-                  <img src="img/filled-star.svg" alt="star">
+                  <img src="img/svg/filled-star.svg" alt="star">
                 </span>
               </div>
               <div class="testimonial-title">Thank you for our beautiful home.</div>
@@ -520,8 +571,8 @@
           </div>
         </div>
         <div class="testimonials-button__container">
-          <button class="btn-slide slide-left"><img src="img/ArrowL.svg" alt=""></button>
-          <button class="btn-slide slide-right"><img src="img/ArrowR.svg" alt=""></button>
+          <button aria-label="button scroll left" class="button-slide slide-left"><img src="img/svg/ArrowL.svg" alt=""></button>
+          <button aria-label="button scroll left" class="button-slide slide-right"><img src="img/svg/ArrowR.svg" alt=""></button>
         </div>
       </section>
       <section class="cta__section" id="cta">
@@ -542,7 +593,7 @@
     </main>
     <footer class="footer__section">
       <div class="footer-logo__container">
-        <img src="img/white-logo.svg" alt="Estate">
+        <img src="img/svg/white-logo.svg" alt="Estate">
       </div>
       <nav class="footer-navigation__container grid">
         <div class="pages-column">
@@ -588,16 +639,16 @@
         <p class="copyrights">&copy; Estate, LLC. All rights reserved. Powered by Webflow.</p>
         <div class="social-networks">
           <a href="#" class="social-network">
-            <img src="img/linked-in.svg" alt="linkedin">
+            <img src="img/svg/linked-in.svg" alt="linkedin">
           </a>
           <a href="#" class="social-network">
-            <img src="img/facebook.svg" alt="facebook">
+            <img src="img/svg/facebook.svg" alt="facebook">
           </a>
           <a href="#" class="social-network">
-            <img src="img/instagram.svg" alt="instagram">
+            <img src="img/svg/instagram.svg" alt="instagram">
           </a>
           <a href="#" class="social-network">
-            <img src="img/twitter.svg" alt="twitter">
+            <img src="img/svg/twitter.svg" alt="twitter">
           </a>
         </div>
       </div>

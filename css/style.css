@@ -44,7 +44,7 @@
       rgba(250, 250, 252, 0.78),
       rgba(250, 250, 252, 0.78)
     ),
-    url(../img/main-img.png);
+    url(../img/gallery/main-img.jpg);
   background-size: cover;
   background-position: top;
   padding: 0;
@@ -89,6 +89,7 @@
   border: 2px solid #ff8a63;
 }
 .hero-link img {
+  max-width: 2.2rem;
   position: relative;
   top: 50%;
   left: 50%;
@@ -155,7 +156,9 @@
   background-color: #45525b;
   margin-bottom: 1rem;
 }
-
+.requirement-icon img {
+  max-width: 2.4rem;
+}
 .requirement-title {
   color: #45525b;
   text-transform: uppercase;
@@ -351,6 +354,9 @@
   line-height: 1.4;
   margin-bottom: 2rem;
 }
+.star img {
+  max-width: 1.8rem;
+}
 .testimonial-author {
   color: #45525b;
   position: relative;
@@ -369,7 +375,7 @@
   gap: 1rem;
   justify-content: flex-end;
 }
-.btn-slide {
+.button-slide {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -382,8 +388,11 @@
   border-radius: 100%;
   cursor: pointer;
 }
-.btn-slide:active {
+.button-slide:active {
   background-color: #c7c7c7;
+}
+.button-slide img {
+  max-width: 2.2rem;
 }
 /* CTA Section */
 .cta__section {
@@ -429,6 +438,9 @@
 .footer-logo__container {
   text-align: center;
   margin-bottom: 7.5rem;
+}
+.footer-logo__container img {
+  max-width: 16rem;
 }
 .footer-navigation__container {
   grid-template-columns: repeat(5, 1fr);
