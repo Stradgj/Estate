@@ -1,5 +1,5 @@
 /* HEADER */
-.header__container {
+.navigation__container {
   display: flex;
   padding: 1rem 1.6rem;
   position: relative;
@@ -37,7 +37,6 @@
 .nav-link:active {
   border-bottom: 1px solid #444;
 }
-
 /* HERO SECTION */
 .hero__section {
   background-image: linear-gradient(

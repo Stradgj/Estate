@@ -34,15 +34,6 @@ h6 {
   font-weight: inherit;
 }
 
-:focus,
-:active {
-  outline: none;
-}
-a:focus,
-a:active {
-  outline: none;
-}
-
 html,
 body {
   width: 100%;
@@ -64,7 +55,7 @@ body {
   font-size: 1.8rem;
 }
 
-*:focus {
+:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem #45525b;
 }
@@ -180,7 +171,6 @@ body {
   height: 2rem;
   position: relative;
   cursor: pointer;
-  transition: all 0.3s;
 }
 .mobile-menu::after,
 .mobile-menu::before {
@@ -191,16 +181,27 @@ body {
   background-color: #45525b;
   transition: all 0.3s;
 }
-.mobile-close-menu {
-  transform: translateY(-30%);
-}
 .mobile-menu::before {
   bottom: 0;
 }
 .mobile-close-menu::after {
-  transform: rotate(45deg);
-  bottom: 0;
+  transform: rotate(45deg) translateY(1.2rem);
 }
 .mobile-close-menu::before {
-  transform: rotate(-45deg);
+  transform: rotate(-45deg) translateY(-1.2rem);
+}
+.sticky-nav header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5.7rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.906);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+.sticky-nav .hero__section {
+  margin-top: 5.7rem;
 }

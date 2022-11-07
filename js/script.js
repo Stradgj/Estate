@@ -32,17 +32,18 @@ openMenu.addEventListener("click", function () {
   navigation.classList.toggle("close");
 });
 //smooth scrolling animation
+const heroSection = document.querySelector(".hero__section");
 const navBox = document.querySelector(".nav-box");
 const allLinks = document.querySelectorAll("a:link");
 allLinks.forEach((link) =>
   link.addEventListener("click", function (e) {
     e.preventDefault();
     const href = link.getAttribute("href");
-    if (href === "#")
-      window.scrollTo({
-        top: 0,
+    if (href === "#") {
+      heroSection.scrollIntoView({
         behavior: "smooth",
       });
+    }
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({
@@ -56,3 +57,22 @@ allLinks.forEach((link) =>
     }
   })
 );
+// Sticky nav
+const bodyEl = document.querySelector("body");
+const sectionHeroEL = document.querySelector(".hero__section");
+
+const observer = new IntersectionObserver(
+  function (ent) {
+    if (!ent[0].isIntersecting) {
+      bodyEl.classList.add("sticky-nav");
+    } else {
+      bodyEl.classList.remove("sticky-nav");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+observer.observe(sectionHeroEL);
