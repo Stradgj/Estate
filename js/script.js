@@ -40,7 +40,8 @@ allLinks.forEach((link) =>
     e.preventDefault();
     const href = link.getAttribute("href");
     if (href === "#") {
-      heroSection.scrollIntoView({
+      window.scrollTo({
+        top: 0,
         behavior: "smooth",
       });
     }
